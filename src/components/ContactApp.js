@@ -2,7 +2,7 @@ import React from 'react';
 import ContactList from './ContactList';
 import { getData } from '../utils/data';
 import ContactInput from './ContactInput';
-import ImageDefault from '../images/default.jpg'
+
  
 class ContactApp extends React.Component {
  constructor(props){
@@ -28,7 +28,7 @@ onAddContactHandler({name, tag}){
           id: +new Date(),
           name,
           tag,
-          imgUrl: <ImageDefault/>,
+          imgUrl:'/images/default.jpg',
         }
       ]
     }
